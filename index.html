@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12am Boba Zoom Call</title>
+</head>
+<body>
+    <div class="text">
+    <h1>12:30am Boba Zoom Call</h1>
+    <p>I suggest you do not keep zoom calls at 12:30am</p>
+    <p>personally I do not think it is a very good time</p>
+    <p>however I must stay up and make website</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png" alt="boba" class="img">
+</div>
+    <div class="spill"></div>
+    <style>
+        *{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: cadetblue;
+        }
+
+        .img{
+            width: 200px;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .text{
+            position: relative;
+            background-color: transparent;
+        }
+
+        .spill{
+            height: 0px;
+            width: 100%;
+            background-color: wheat;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            animation: fill 5s linear infinite;
+        }
+
+        @keyframes fill {
+            0% {
+                height: 0px;
+            }
+            75% {
+                height: 100%;
+            }
+            100% {
+                height: 0%;
+            }
+        }
+    </style>
+</body>
+</html>
